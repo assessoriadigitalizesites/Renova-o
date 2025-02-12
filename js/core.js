@@ -377,7 +377,7 @@ function onChangeHeight(val) {
 function getProducts(category) {
   $(".preloader-view").css("display", "flex");
   $.ajax({
-    url: "https://www.colchoa.com.br/api/index.php?category=" + category,
+    url:  + category,
     method: "GET",
     success: function(result) {
       var htmlStr = "";
